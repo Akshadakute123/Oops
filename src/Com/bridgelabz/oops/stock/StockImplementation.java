@@ -21,7 +21,7 @@ public class StockImplementation implements StockInterface
 	
 	//List<Inventory> list = new ArrayList<Inventory>();
 	ObjectMapper objectMapper = new ObjectMapper();
-	File file = new File("/home/admin1/eclipse-workspace/OopsProject/src/Com/bridgelabz/oops/stock/Stockmgte.json");
+	File file = new File("/home/admin1/Akshada/OopsProject/src/Com/bridgelabz/oops/stock/Stockmgte.json");
 
 	public List<Stockmgt> readfile() throws JsonParseException, JsonMappingException, IOException {
 		List<Stockmgt>list=objectMapper.readValue(file,new TypeReference<List<Stockmgt>>() {

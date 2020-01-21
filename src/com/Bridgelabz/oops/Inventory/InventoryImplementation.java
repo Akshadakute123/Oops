@@ -19,7 +19,7 @@ public class InventoryImplementation implements InventoryInterface {
 	Inventory inventory=new Inventory();
 	//List<Inventory> list = new ArrayList<Inventory>();
 	ObjectMapper objectMapper = new ObjectMapper();
-	File file = new File("/home/admin1/eclipse-workspace/OopsProject/src/com/Bridgelabz/oops/Inventory/Inventory.json");
+	File file = new File("/home/admin1/Akshada/OopsProject/src/com/Bridgelabz/oops/Inventory/Inventory.json");
 
 	public List<Inventory> readfile() throws JsonParseException, JsonMappingException, IOException {
 		List<Inventory> list = objectMapper.readValue(file, new TypeReference<List<Inventory>>() {
