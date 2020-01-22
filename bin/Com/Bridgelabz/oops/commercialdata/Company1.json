@@ -1,0 +1,13 @@
+[ {
+  "companyName" : "abc",
+  "noOfShares" : 63,
+  "price" : 765677.0
+}, {
+  "companyName" : "axis",
+  "noOfShares" : 44,
+  "price" : 6666.0
+}, {
+  "companyName" : "abc",
+  "noOfShares" : 444,
+  "price" : 665544.0
+} ]

@@ -1,28 +1,38 @@
 package Com.Bridgelabz.oops.commercialdata;
 
-public class Company
-{ 
-	private String company_name;
-	private int number_of_companyshares;
-	private int prices;
-	public String getCompany_name() {
-		return company_name;
+/**
+ * Purpose: To set and get data to available fields
+ * 
+ * @author 
+ *
+ */
+public class Company {
+
+	public String companyName;
+	public int noOfShares;
+	public float price;
+	public String getCompanyName() {
+		return companyName;
 	}
-	public void setCompany_name(String company_name) {
-		this.company_name = company_name;
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
-	public int getNumber_of_shares() {
-		return number_of_companyshares;
+	public int getNoOfShares() {
+		return noOfShares;
 	}
-	public void setNumber_of_shares(int number_of_shares) {
-		this.number_of_companyshares = number_of_shares;
+	public void setNoOfShares(int noOfShares) {
+		this.noOfShares = noOfShares;
 	}
-	public int getPrices() {
-		return prices;
+	public float getPrice() {
+		return price;
 	}
-	public void setPrices(int prices) {
-		this.prices = prices;
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "CompanyDetails [companyName=" + companyName + ", noOfShares=" + noOfShares + ", price=" + price + "]";
 	}
 	
-
+	
 }

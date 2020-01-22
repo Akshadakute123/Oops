@@ -1,0 +1,22 @@
+[ {
+  "companyName" : "abc",
+  "noOfCompanyShares" : 63,
+  "customerName" : "ahahsgsg",
+  "noOfCustomerShares" : 33,
+  "datetime" : {
+    "nano" : 993391000,
+    "year" : 2020,
+    "monthValue" : 1,
+    "dayOfMonth" : 22,
+    "hour" : 18,
+    "minute" : 52,
+    "second" : 25,
+    "dayOfWeek" : "WEDNESDAY",
+    "dayOfYear" : 22,
+    "month" : "JANUARY",
+    "chronology" : {
+      "calendarType" : "iso8601",
+      "id" : "ISO"
+    }
+  }
+} ]
