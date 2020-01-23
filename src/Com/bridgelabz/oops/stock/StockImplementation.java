@@ -11,6 +11,8 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
 
+import com.Bridgelabz.oops.Inventory.Inventory;
+
 
 
 public class StockImplementation implements StockInterface
@@ -86,5 +88,24 @@ public class StockImplementation implements StockInterface
 		
 		return list;
 	}
+	public List<Stockmgt> calculate(List<Stockmgt> list) 
+	{
+	int [] counts=new int[10];
+	int sum=0;
+		  for (int i = 0; i < list.size(); i++)
+		  {
+			//System.out.println(list.get(i).getStockname()+" ");
+		int totalcount=list.get(i).getNo_of_shares()*list.get(i).getPrice();
+			
+				//counts[j]=list.get(i).getNo_of_shares()*list.get(i).getPrice();
+						sum=sum+list.get(i).getNo_of_shares()*list.get(i).getPrice();;
+				
+			
+		}
+		  System.out.println("sum of total comapnies"+sum);
+			
+			return list;
+		}
+		
 
 }

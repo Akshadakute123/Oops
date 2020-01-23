@@ -22,7 +22,7 @@ public class Stockmgtmain
 			}
 		 do {
 			 
-		 System.out.println("enter 1 to add stock\n enter 2 to remove stock\nenter 3 to update");
+		 System.out.println("enter 1 to add stock\n enter 2 to remove stock\nenter 3 to update\n4.Total");
 		 System.out.println("enter your choice");
 		 int choice=scan.nextInt();
 		 switch(choice)
@@ -41,6 +41,10 @@ public class Stockmgtmain
 			 List<Stockmgt>update1= stockimp.readfile();
 			 List<Stockmgt>updated= stockimp.update(update1);
 			 stockimp.writeFile(updated);
+			 break;
+		 case 4:
+			 List<Stockmgt>total=stockimp.readfile();
+			 List<Stockmgt>totalcount=stockimp.calculate(total);
 			 break;
 			 default:
 				 System.out.println("please enter valid information");
